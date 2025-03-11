@@ -1,0 +1,186 @@
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~
+$ cd learn_git
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git
+$ git add third.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git
+$ git add book.txt.
+fatal: not a git repository (or any of the parent directories): .git
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git
+$ touch third.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git
+$ ls
+third.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git
+$ git innit
+git: 'innit' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git
+$ git init
+Initialized empty Git repository in C:/Users/FAITHFULNESS/learn_git/.git/
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add third.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git commit -m "beautiful"
+[main (root-commit) 32fced4] beautiful
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git commit -m "third.txt
+> git commit -m "third.txt"
+> git commit -m "third.txt
+git commit -m "adding third.txt"
+On branch main
+nothing to commit, working tree clean
+On branch main
+nothing to commit, working tree clean
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git log
+commit 32fced40815b49049dfb5d75c9f3a68a8de06e16 (HEAD -> main)
+Author: unknown <oduwarefaithfulness@gmail.com>
+Date:   Tue Mar 11 07:49:16 2025 -0600
+
+    beautiful
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ touch fourth.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add fourth.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git commit -m "adding fourth.txt"
+[main dbb0924] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git commit _m "remove third.txt"
+error: pathspec '_m' did not match any file(s) known to git
+error: pathspec 'remove third.txt' did not match any file(s) known to git
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git rm third.txt
+rm 'third.txt'
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add. third.txt
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ touch third.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add third.txt
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git comitt "third.txt"
+git: 'comitt' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git commit -m "third.txt"
+On branch main
+nothing to commit, working tree clean
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git rm --cached third.txt
+rm 'third.txt'
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git add .
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git commit -m "remove third.txt"
+On branch main
+nothing to commit, working tree clean
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git log
+commit dbb0924547a012b7a7eb872d0651eb95fb5cf15d (HEAD -> main)
+Author: unknown <oduwarefaithfulness@gmail.com>
+Date:   Tue Mar 11 07:56:23 2025 -0600
+
+    adding fourth.txt
+
+commit 32fced40815b49049dfb5d75c9f3a68a8de06e16
+Author: unknown <oduwarefaithfulness@gmail.com>
+Date:   Tue Mar 11 07:49:16 2025 -0600
+
+    beautiful
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git config --global core.pager
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git config --global --list
+user.email=oduwarefaithfulness@gmail.com
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git conig --list --show-origin
+git: 'conig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$ git config --list --show-origin
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig init.defaultbranch=main
+file:C:/Users/FAITHFULNESS/.gitconfig   user.email=oduwarefaithfulness@gmail.com
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.symlinks=false
+file:.git/config        core.ignorecase=true
+
+FAITHFULNESS@DESKTOP-OT5JOEN MINGW64 ~/learn_git (main)
+$
